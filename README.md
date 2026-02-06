@@ -250,4 +250,4 @@ if you have/use canvas for school use canvas blocker or the browser in a vm so i
 #2: X/Grok, a month or so free as long as you sign up with the .edu email as of may 22 2025 but believed to last until the end of this year or forever.
 #3: ChatGPT: 2 months free until end of may 2025
 there might be more lmk if there is
-also discord: https://discord.gg/8mtJc3w4DT
+also discord for more stuff/stuff i will get dmca for: https://discord.gg/8mtJc3w4DT
