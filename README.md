@@ -116,7 +116,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 | Name | Link | Notes |
 |------|------|-------|
-| LM Arena | [lmarena.ai](https://lmarena.ai/?mode=side-by-side) | 2 models side-by-side, includes paid models, community voting |
+| Arena | [arena.ai](https://arena.ai/?mode=side-by-side) | 2 models side-by-side, includes paid models, community voting |
 | Yupp AI | [yupp.ai](https://yupp.ai/) | More community support, more models, includes paid ones like o3 pro |
 
 ---
@@ -503,8 +503,8 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 | Name | Link |
 |------|------|
-| LM Arena Leaderboard | [lmarena.ai/leaderboard](https://lmarena.ai/leaderboard) |
-| HuggingFace Arena | [huggingface.co](https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard) |
+| Arena Leaderboard | [arena.ai/leaderboard](https://arena.ai/leaderboard) |
+| HuggingFace Arena | [huggingface.co](https://huggingface.co/spaces/arena-ai/chatbot-arena-leaderboard) |
 | OpenLM Arena | [openlm.ai](https://openlm.ai/chatbot-arena/) |
 | Vellum LLM Leaderboard | [vellum.ai](https://www.vellum.ai/llm-leaderboard) |
 | LLM Stats | [llm-stats.com](https://llm-stats.com/) |
@@ -525,7 +525,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | SnitchBench (old?) | [www.snitchbench.com](https://www.snitchbench.com/) |
 | LiveBench | [livebench.ai](https://livebench.ai/) |
 | LiveBench | [livebench.ai](https://livebench.ai/) |
-| LLM Arena (.ai) | [llmarena.ai](https://llmarena.ai/) |
+| LLM Arena (.ai) | [larena.ai](https://larena.ai/) |
 | AGI Safe | [agi.safe.ai](https://agi.safe.ai/) |
 | WeirdML | [htihle.github.io/weirdml](https://htihle.github.io/weirdml.html) |
 | Math Arena | [matharena.ai](https://matharena.ai/) |
