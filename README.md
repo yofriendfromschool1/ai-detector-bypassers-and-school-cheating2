@@ -496,7 +496,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 ### Can't Paste?
 
 - Get the extension: **"Enable Copy Paste"** or **"Don't F\*\*k with Paste"**
-
+- Also make sure to paste with **CTRL + SHIFT + V** to paste without font.
 ---
 
 ## 📊 AI Leaderboards & Benchmarks
