@@ -521,6 +521,9 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | Artificial Analysis | [artificialanalysis.ai](https://artificialanalysis.ai/) |
 | Artificial Analysis Models | [artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models) |
 | Humanity's Last Exam | [artificialanalysis.ai/evaluations/humanitys-last-exam](https://artificialanalysis.ai/evaluations/humanitys-last-exam) |
+| SnitchBench | [snitchbench.t3.gg](https://snitchbench.t3.gg/) |
+| SnitchBench (old?) | [www.snitchbench.com](https://www.snitchbench.com/) |
+| LiveBench | [livebench.ai](https://livebench.ai/) |
 | LiveBench | [livebench.ai](https://livebench.ai/) |
 | LLM Arena (.ai) | [llmarena.ai](https://llmarena.ai/) |
 | AGI Safe | [agi.safe.ai](https://agi.safe.ai/) |
