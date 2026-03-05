@@ -28,6 +28,7 @@
 - [Student Discounts (.edu)](#-student-discounts-edu)
 - [Extra Tips & Tricks](#-extra-tips--tricks)
 - [AI Leaderboards & Benchmarks](#-ai-leaderboards--benchmarks)
+- [Agentic Browsers](#-agentic-ai-browsers)
 
 ---
 
@@ -109,6 +110,63 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | Name | Link | Notes |
 |------|------|-------|
 | Gizmo AI | [gizmo.ai](https://gizmo.ai/) | OP if you put your school & know each other; has flashcards |
+
+---
+
+---
+
+## 🌐 Agentic AI Browsers
+
+> **Agentic browsers** go beyond traditional browsing—they can autonomously navigate websites, fill forms, extract data, and execute multi-step tasks using natural language prompts.
+
+### Standalone AI Browsers
+
+| Name | Link | Pricing | Best For | Notes |
+|------|------|---------|----------|-------|
+| Perplexity Comet | [perplexity.ai](https://www.perplexity.ai/) | **Free** | Research & automation | Comet Assistant can navigate web, access email/calendar, complete tasks autonomously |
+| ChatGPT Atlas | [openai.com](https://openai.com/) | Free / $20/mo Plus | ChatGPT users | Agent Mode for multi-step autonomous tasks (Plus only) |
+| Dia Browser | [thebrowser.company](https://thebrowser.company/) | Free (waitlist) | Privacy-conscious users | From Arc team; AI sidebar, context-aware assistant, learns from browsing history |
+| Fellou | [fellou.ai](https://fellou.ai/) | $20–$297/mo | Deep research | Deep Action Agent converts prompts to workflows; shows execution plan before acting |
+| Genspark | [genspark.ai](https://genspark.ai/) | Free / $25/mo Plus | Offline model access | Autopilot mode; can download and run models locally |
+| Sigma AI Browser | — | **Free** | Privacy-first | SigmaGPT runs locally; no cloud dependency; Windows/macOS/Linux/Android/iOS |
+| Opera Neon | [opera.com/neon](https://www.opera.com/) | $19.90/mo | Power users | Ad blocker, VPN, highlight-to-explore; Chromium-based |
+
+### AI Features in Traditional Browsers
+
+| Browser | AI Feature | Pricing | Agentic Level | Notes |
+|---------|------------|---------|---------------|-------|
+| Chrome + Gemini | Auto Browse | Limited free | Full | Google's agentic browsing via Gemini integration |
+| Microsoft Edge | Copilot Mode | **Free** | Partial | Multi-tab context awareness; natural voice navigation |
+| Claude for Chrome | Extension | Subscription | Full | Anthropic's Claude; site-level permissions; action confirmations |
+| Brave Leo | Built-in | Free / Premium | None (assistant only) | Chat, summarization—not autonomous |
+
+---
+
+## 🛠️ Developer & Open Source Agentic Tools
+
+> For developers, researchers, and power users who want programmatic control or self-hosted solutions.
+
+### Open Source Frameworks
+
+| Name | Link | Notes |
+|------|------|-------|
+| Browser Use | [github.com/browser-use](https://github.com/browser-use/browser-use) | **89.1% WebVoyager benchmark**; LangChain integration; Python library or API |
+| Vercel Agent Browser | [github.com/vercel/agent-browser](https://github.com/vercel/agent-browser) | Rust CLI; 14k+ GitHub stars; snapshot-based workflow with refs (@e1, @e2) |
+| Stagehand | [github.com/browserbase/stagehand](https://github.com/browserbase/stagehand) | TypeScript SDK; `act()`, `extract()`, `observe()` primitives |
+| Steel.dev | [steel.dev](https://steel.dev/) | Open-source browser control API; stealth capabilities; web-based debugging UI |
+| Open Operator | [github.com/browser-use](https://github.com/browser-use/browser-use) | Browser-Use team's Operator alternative; approval mode available |
+| Agent-E | — | DOM Distillation approach; 73.1% WebVoyager; no vision models needed |
+| Nanobrowser | Chrome Extension | Quick tasks from browser toolbar; no server setup |
+| AgentGPT | [agentgpt.reworkd.ai](https://agentgpt.reworkd.ai/) | No-code agent configuration; self-hostable |
+
+### Cloud Browser Infrastructure
+
+| Name | Link | Notes |
+|------|------|-------|
+| Browserbase | [browserbase.com](https://browserbase.com/) | Headless Chrome as a service; Stagehand SDK included |
+| Bright Data Agent Browser | [brightdata.com](https://brightdata.com/) | Enterprise; 1M+ concurrent sessions; built-in CAPTCHA solving |
+| Hyperbrowser | [hyperbrowser.ai](https://hyperbrowser.ai/) | Natural language APIs; managed infrastructure |
+| Amazon Nova Act | [aws.amazon.com](https://aws.amazon.com/) | SDK for browser agents; Playwright integration; 0.939 ScreenSpot benchmark |
 
 ---
 
