@@ -555,6 +555,14 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 - Get the extension: **"Enable Copy Paste"** or **"Don't F\*\*k with Paste"**
 - Also make sure to paste with **CTRL + SHIFT + V** to paste without font.
+
+### Slides?
+- https://chat.z.ai/
+- https://www.kimi.com/
+
+### More Info:
+- [Free Media Heck Yeah's AI Section](https://fmhy.net/ai)
+
 ---
 
 ## 📊 AI Leaderboards & Benchmarks
