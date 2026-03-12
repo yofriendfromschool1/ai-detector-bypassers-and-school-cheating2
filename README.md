@@ -406,6 +406,10 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 ### Stukent
 
 - https://github.com/smotired/stukent-stock-predictor
+- https://github.com/yofriendfromschool1/stukent-stock-predictor-vibe-rewrite
+- https://gpt-stukent-predictor.netlify.app/
+- https://claude-stukent-predictor.netlify.app/
+- https://gemini-stukent-predictor.netlify.app/
 
 ### Quizizz & Quizlet
 
