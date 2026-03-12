@@ -403,6 +403,10 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 - [ading2210/edpuzzle-answers](https://github.com/ading2210/edpuzzle-answers)
 
+### Stukent
+
+- https://github.com/smotired/stukent-stock-predictor
+
 ### Quizizz & Quizlet
 
 - [UndercoverGoose/classroom-cheats](https://github.com/UndercoverGoose/classroom-cheats) *(both Quizizz & Quizlet)*
