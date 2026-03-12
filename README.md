@@ -474,7 +474,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 ### 🏆 Prompt 9 (The Ultimate Prompt)
 
-> Use high burstiness and high perplexity. Don't be too repetitive. Don't use em dashes or en dashes. Write more human-like. Don't use unnecessary words and phrases. Don't use wording or big words that only a person in college or a writer would know. You can use professional writers like Mark Twain, Hemingway, and Shakespeare (or any more writers) as an example for your writing style **BUT DO NOT MENTION THEM**. Make it have 0% in AI detectors like ZeroGPT, GPTZero, Originality.ai, CopyLeaks, and TurnItIn.
+> Use high burstiness and high perplexity. Don't be too repetitive. Don't use em dashes or en dashes. Write more human-like. Don't use unnecessary words and phrases. Don't use wording or big words that only a person in college or a writer would know. You can use professional writers like Mark Twain, Hemingway, and Shakespeare (or any more writers) as an example for your writing style **BUT DO NOT MENTION THEM**. Make it have 0% in AI detectors like ZeroGPT, GPTZero, Originality.ai, CopyLeaks, TurnItIn. And Non-AI detectors, models like Claude or ChatGPT or Gemini if pasted into there it won't detect it as AI.
 >
 > *(Best used with unpopular but high-quality latest AI models like Claude or GLM. Ask research AI like Perplexity, Grok, or an unbiased AI which model to use — you can even ask for a prompt for it.)*
 
