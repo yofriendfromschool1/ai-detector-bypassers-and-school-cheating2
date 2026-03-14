@@ -562,6 +562,14 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 ## 🧰 Extra Tips & Tricks
 
+### Extras
+https://github.com/drperkybottom10/CheatSheetAI
+https://github.com/frfaker/School-User-Scripts-Cheats
+https://github.com/GN-math-hub/School-Chaets
+https://github.com/DeroXP/gfy
+https://github.com/DeroXP/evading-school-blockers
+https://github.com/ubn2/CheckMyDraftAI
+
 ### Can't Copy Highlighted Text?
 
 - Use an extension to convert to PDF: **"Print Selection to PDF"** or [Glasp](https://glasp.co/)
@@ -572,11 +580,17 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 - Make sure to select **"Microsoft Print to PDF"** or **"Save as PDF"**
 - **CTRL + A** to select all text, then **CTRL + P** to print
 
-### Can't Paste?
+### Can't Paste? Or want to make so when you do paste, it types it out due to history?
 
 - Get the extension: **"Enable Copy Paste"** or **"Don't F\*\*k with Paste"**
 - Also make sure to paste with **CTRL + SHIFT + V** to paste without font.
-
+- [PasteHuman](https://github.com/TheManWhoLikesToCode/PasteHuman)
+- [Paste2Type](https://chromewebstore.google.com/detail/paste2type/mlenefmjpkailimgimnkahahmjjmjhnc)
+- [ClipType](https://chromewebstore.google.com/detail/cliptype/jbjdlajdpnagnfmjboghohgieipifdic)
+- [Clipboard-typer](https://github.com/behaviorism/clipboard-typer)
+- [Human Typer](https://chromewebstore.google.com/detail/humantyper-realistic-auto/emnddjmjlkmgkdcfcpgppmibpekkgifp?authuser=0&hl=fr)
+- [Human Paste](https://chromewebstore.google.com/detail/human-paste/omjadkbfijjgpkbljbmfhdkbpljabhaf)
+  
 ### Slides?
 - https://chat.z.ai/
 - https://www.kimi.com/
