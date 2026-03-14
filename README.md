@@ -463,6 +463,19 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 - [Evadus](https://evadus.wtf/)
 - [YouTube Tutorial](https://www.youtube.com/watch?v=mvzHo6GqFeo)
 - [Lockdown Browser Cheat Guide 2025 (Reddit)](https://www.reddit.com/r/cheatonlineproctor/comments/1nh5f42/lockdown_browser_cheat_guide_2025/)
+- [exampiebypass.com](https://exampiebypass.com/blog/)
+- [RemoteControlForLockDownBroswer](https://github.com/BaiJin0224/RemoteControlForLockDownBroswer)
+- [onlineexamcheats](https://www.youtube.com/@onlineexamcheats/videos)
+- [onlineexamcheating.com](https://onlineexamcheating.com/)
+- [onlineschoolexploits.sellpass.io](https://onlineschoolexploits.sellpass.io/)
+- [Lockdown-Workaround](https://github.com/EamonnPatt/Lockdown-Workaround)
+- [Lockdown-Browser-Bypass-for-Mac](https://github.com/Big964/Lockdown-Browser-Bypass-for-Mac)
+- [ldbypass](https://github.com/BotDevPanda/ldbypass) **Respondus**
+- [r/cheatonlineproctor](https://www.reddit.com/r/cheatonlineproctor/)
+- [Some Example](https://www.reddit.com/r/cheatonlineproctor/comments/1rq1xz7/i_was_wondering_if_this_would_work/)
+- [old school cheating](https://www.reddit.com/r/cheatonlineproctor/comments/1rm73vu/old_school_cheating/)
+- [UpadtedMethod](https://github.com/AsherAuerbach/UpadtedMethod) **Respondus**
+  
 
 ---
 
