@@ -590,6 +590,8 @@ https://github.com/ubn2/CheckMyDraftAI
 - [Clipboard-typer](https://github.com/behaviorism/clipboard-typer)
 - [Human Typer](https://chromewebstore.google.com/detail/humantyper-realistic-auto/emnddjmjlkmgkdcfcpgppmibpekkgifp?authuser=0&hl=fr)
 - [Human Paste](https://chromewebstore.google.com/detail/human-paste/omjadkbfijjgpkbljbmfhdkbpljabhaf)
+- [autotyper](https://github.com/himanshp1656/autotyper)
+- [human-typing-simulation](https://github.com/mondemonde/human-typing-simulation)
   
 ### Slides?
 - https://chat.z.ai/
