@@ -235,6 +235,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | HumanizeAIPro | [humanizeai.pro](https://www.humanizeai.pro/) |
 | DetectGPT | [detectgpt.com](https://detectgpt.com/ai-humanizer) |
 | UndetectedGPT | [undetectedgpt.ai](https://www.undetectedgpt.ai/) |
+| Litero AI | [litero.ai](https://litero.ai/) |
 | Rephrasy | [rephrasy.ai](https://www.rephrasy.ai/) |
 | Cleverspinner | [cleverspinner.com](https://cleverspinner.com/) |
 | AI Text Humanizer | [ai-text-humanizer.com](https://ai-text-humanizer.com/) |
