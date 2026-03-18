@@ -594,6 +594,7 @@ https://github.com/ubn2/CheckMyDraftAI
 - [autotyper](https://github.com/himanshp1656/autotyper)
 - [human-typing-simulation](https://github.com/mondemonde/human-typing-simulation)
 - [Universal-Human-Paster-Typer](https://github.com/yofriendfromschool1/Universal-Human-Paster-Typer)
+- [Chrome-Extension-Human-Typer-Paster](https://github.com/yofriendfromschool1/Chrome-Extension-Human-Typer-Paster)
   
 ### Slides?
 - https://chat.z.ai/
