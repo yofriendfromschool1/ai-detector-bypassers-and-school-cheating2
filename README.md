@@ -216,6 +216,10 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | Name | Link |
 |------|------|
 | Undetectable.aipro | [undetectableai.pro](https://www.undetectableai.pro/) |
+| Walter Writes AI | [walterwrites.ai](https://walterwrites.ai/) |
+| CleverHumanizer | [cleverhumanizer.ai](https://cleverhumanizer.ai/) |
+| RewriteIQ | [rewriteiq.com](https://rewriteiq.com/)
+| TheContentGPT | [TheContentGPT](https://thecontentgpt.com)
 | GPTinf | [app.gptinf.com](https://app.gptinf.com/) |
 | Cognibypass | [cognibypass.com](https://cognibypass.com/bypass) |
 | Spinbot | [spinbot.com](https://spinbot.com/) |
@@ -235,6 +239,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | HumanizeAIPro | [humanizeai.pro](https://www.humanizeai.pro/) |
 | DetectGPT | [detectgpt.com](https://detectgpt.com/ai-humanizer) |
 | UndetectedGPT | [undetectedgpt.ai](https://www.undetectedgpt.ai/) |
+| UnAIMyText | [unaimytext.com](https://unaimytext.com/) |
 | Litero AI | [litero.ai](https://litero.ai/) |
 | Rephrasy | [rephrasy.ai](https://www.rephrasy.ai/) |
 | Cleverspinner | [cleverspinner.com](https://cleverspinner.com/) |
@@ -538,7 +543,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 | Tier | Tools |
 |------|-------|
-| **Paid** | TwainGPT, Cognibypass, Humbot, BypassGPT |
+| **Paid** | TwainGPT, Cognibypass, Humbot, BypassGPT, Walter Writes AI, Clever Humanizer, RewriteIQ |
 | **Free** | Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT |
 
 > **💡 Another free method:** Feed the AI your own old writing samples so it can train on your style. The more you give, the better. You can also use your lowest AI-detected content as training material.
