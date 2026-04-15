@@ -543,8 +543,8 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 | Tier | Tools |
 |------|-------|
-| **Paid** | TwainGPT, Cognibypass, Humbot, BypassGPT, Walter Writes AI, Clever Humanizer, RewriteIQ |
-| **Free** | Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT |
+| **Paid** | TwainGPT, Cognibypass, Humbot, BypassGPT, Walter Writes AI, RewriteIQ |
+| **Free** | Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT, Clever Humanizer |
 
 > **💡 Another free method:** Feed the AI your own old writing samples so it can train on your style. The more you give, the better. You can also use your lowest AI-detected content as training material.
 
