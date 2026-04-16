@@ -510,9 +510,9 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 ## 🔄 My Personal Workflow
 
 1. **Research:** Use [Perplexity](https://www.perplexity.ai/) for the research assignment
-2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) and have it rewrite using **Prompt 9**
+2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) and have it rewrite using **Prompt 9**
 3. **Rewrite again:** Optionally have Claude rewrite it again with the same prompt
-4. **Humanize:** Use [TwainGPT](https://app.twaingpt.com/dashboard) with **English (US)** and **Basic level** — run it through **twice**
+4. **Humanize:** Use [TwainGPT](https://app.twaingpt.com/dashboard) with **English (US)** and **Pro** — run it through **twice**
 5. **Verify:** Check with all of these to ensure 0%:
    - [Originality.ai](https://originality.ai/)
    - [ZeroGPT](https://www.zerogpt.com/)
@@ -535,6 +535,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | Model | Strength |
 |-------|----------|
 | Claude | Most human-sounding |
+| GLM | Also human-sounding |
 | Grok (X/Twitter) | Sounds like current generation / Gen Z |
 | Gemini (Google) | Best for research / medical |
 | ChatGPT | General purpose / everything |
