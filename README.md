@@ -510,7 +510,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 ## 🔄 My Personal Workflow
 
 1. **Research:** Use [Perplexity](https://www.perplexity.ai/) for the research assignment
-2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) ) and have it rewrite using **Prompt 9**
+2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) or [ISH](https://beta.ish.chat) ) and have it rewrite using **Prompt 9**
 3. **Rewrite again:** Optionally have Claude rewrite it again with the same prompt
 4. **Humanize:** Use [TwainGPT](https://app.twaingpt.com/dashboard) with **English (US)** and **Pro** — run it through **twice**
 5. **Verify:** Check with all of these to ensure 0%:
