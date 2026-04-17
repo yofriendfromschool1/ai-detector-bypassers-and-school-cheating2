@@ -254,6 +254,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | WordReference | [wordreference.com](https://www.wordreference.com/synonyms/wordhere) | Synonyms |
 | Thesaurus | [thesaurus.com](https://www.thesaurus.com/browse/wordhere) | Synonyms |
 | Hemingway Editor | [hemingwayapp.com](https://hemingwayapp.com/) | Readability |
+| CleanPaste | [CleanPaste.site](https://cleanpaste.site) | AI Watermarks/Non standard words |
 
 ### 💡 Pro Tip
 
