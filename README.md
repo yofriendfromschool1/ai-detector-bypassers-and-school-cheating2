@@ -608,6 +608,10 @@ https://github.com/ubn2/CheckMyDraftAI
 - https://chat.z.ai/
 - https://www.kimi.com/
 
+## Restricted device?
+- If on chrome and you're really restricted to things like wifi, click 3 dots top right of chrome than "Search this tab with Google Lens" than you can use google search ai with the tab.
+
+
 ### More Info:
 - [Free Media Heck Yeah's AI Section](https://fmhy.net/ai)
 
