@@ -520,6 +520,14 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
    - [ZeroGPT](https://www.zerogpt.com/)
    - [GPTZero](https://www.gptzero.me/)
    - [Sapling.ai](https://sapling.ai/ai-content-detector)
+  
+**For State Testings** 
+1. **Install** Linux Mint and customize it to look like windows 10 as much as possible
+2. **Install Test App** on linux mint
+3. **Install Browsers** like firefox or chrome or edge or zen browser or valvdi or brave
+4. **Install warp-cli**
+5. **Install some type of cli for AI or ollama**
+6. **or just use vm**
 
 ---
 
