@@ -528,6 +528,13 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 4. **Install warp-cli**
 5. **Install some type of cli for AI or ollama**
 6. **or just use vm**
+if you need to stay in focus and dont want it to see apps:
+sudo apt install xserver-xephyr bubblewrap
+Xephyr -br -ac -noreset -screen 1280x720 :1 &
+new terminal
+DISPLAY=:1 bwrap --dev-bind / / --unshare-pid --unshare-ipc commandtoapphere commandtoapphere
+or hide an app entirely:
+sudo mount -o remount,rw,hidepid=2 /proc
 
 ---
 
