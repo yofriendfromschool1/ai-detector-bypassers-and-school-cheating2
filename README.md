@@ -176,7 +176,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 |------|------|-------|
 | Arena | [arena.ai](https://arena.ai/?mode=side-by-side) | 2 models side-by-side, includes paid models, community voting |
 | Yupp AI | [yupp.ai](https://yupp.ai/) | More community support, more models, includes paid ones like o3 pro |
-
+| LMCouncil | [lmcouncil.ai](https://lmcouncil.ai/) | Benchmarks, comparing, paid models |
 ---
 
 ## 👓 AI Smart Glasses & Accessories
