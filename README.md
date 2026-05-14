@@ -8,6 +8,7 @@
 > **📌 NOTE:** If any links are down, use [archive.org](https://archive.org) to find cached versions.
 
 ---
+- https://hermes-agent.nousresearch.com/
 
 ## 📑 Table of Contents
 
