@@ -643,6 +643,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | Vellum LLM Leaderboard | [vellum.ai](https://www.vellum.ai/llm-leaderboard) |
 | LLM Stats | [llm-stats.com](https://llm-stats.com/) |
 | Snorkel Leaderboard | [leaderboard.snorkel.ai](https://leaderboard.snorkel.ai/) |
+| exploitbench | [exploitbench.ai](https://exploitbench.ai) |
 | BridgeBench | [bridgebench.ai](https://www.bridgebench.ai) |
 | Countless.dev | [countless.dev](https://countless.dev/) |
 | LiveCodeBench | [livecodebench.github.io](https://livecodebench.github.io/) |
