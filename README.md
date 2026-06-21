@@ -231,6 +231,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 | Conch AI | [getconch.ai](https://www.getconch.ai/) |
 | Undetectable AI | [undetectable.ai](https://undetectable.ai/detector-humanizer) |
 | TwainGPT | [app.twaingpt.com](https://app.twaingpt.com/dashboard) |
+| Lady Bug AI | [ladybugai.us](https://ladybugai.us/humanizer) |
 | Grubby.AI | [grubby.ai](https://grubby.ai/dashboard/humanizer) |
 | Surferseo | [surferseo.com](https://surferseo.com/ai-humanizer/) |
 | WriteHuman | [writehuman.ai](https://writehuman.ai/) |
