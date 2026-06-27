@@ -659,6 +659,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | Artificial Analysis | [artificialanalysis.ai](https://artificialanalysis.ai/) |
 | Artificial Analysis Models | [artificialanalysis.ai/leaderboards/models](https://artificialanalysis.ai/leaderboards/models) |
 | Humanity's Last Exam | [artificialanalysis.ai/evaluations/humanitys-last-exam](https://artificialanalysis.ai/evaluations/humanitys-last-exam) |
+| Agent's Last Exam | [agents-last-exam.org](https://agents-last-exam.org/) |
 | SnitchBench | [snitchbench.t3.gg](https://snitchbench.t3.gg/) |
 | SnitchBench (old?) | [www.snitchbench.com](https://www.snitchbench.com/) |
 | LiveBench | [livebench.ai](https://livebench.ai/) |
