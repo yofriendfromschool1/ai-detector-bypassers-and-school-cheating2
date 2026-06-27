@@ -663,6 +663,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | SnitchBench (old?) | [www.snitchbench.com](https://www.snitchbench.com/) |
 | LiveBench | [livebench.ai](https://livebench.ai/) |
 | LLM Arena (.ai) | [larena.ai](https://larena.ai/) |
+| CyberGym | [cybergym.io](https://www.cybergym.io/) |
 | AGI Safe | [agi.safe.ai](https://agi.safe.ai/) |
 | WeirdML | [htihle.github.io/weirdml](https://htihle.github.io/weirdml.html) |
 | Math Arena | [matharena.ai](https://matharena.ai/) |
