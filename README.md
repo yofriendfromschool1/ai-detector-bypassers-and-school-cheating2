@@ -652,6 +652,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | Scale Leaderboard | [scale.com/leaderboard](https://scale.com/leaderboard) |
 | Next.js AI Agent Evaluations | [next.js.org/evals](https://nextjs.org/evals) |
 | DeepResearch Bench | [deepresearch-bench.github.io](https://deepresearch-bench.github.io/) |
+| DeepSWE | [deepswe.datacurve.ai](https://deepswe.datacurve.ai) |
 | AI Stats (Phaseo) | [ai-stats.phaseo.app](https://ai-stats.phaseo.app/) |
 | ARC Prize Leaderboard | [arcprize.org/leaderboard](https://arcprize.org/leaderboard) |
 | Epoch AI Benchmarks | [epoch.ai/benchmarks](https://epoch.ai/benchmarks) |
