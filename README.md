@@ -650,6 +650,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | LiveCodeBench | [livecodebench.github.io](https://livecodebench.github.io/) |
 | Simple Bench | [simple-bench.com](https://simple-bench.com/) |
 | Scale Leaderboard | [scale.com/leaderboard](https://scale.com/leaderboard) |
+| Next.js AI Agent Evaluations | [next.js.org/evals](https://nextjs.org/evals) |
 | DeepResearch Bench | [deepresearch-bench.github.io](https://deepresearch-bench.github.io/) |
 | AI Stats (Phaseo) | [ai-stats.phaseo.app](https://ai-stats.phaseo.app/) |
 | ARC Prize Leaderboard | [arcprize.org/leaderboard](https://arcprize.org/leaderboard) |
