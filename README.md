@@ -1,5 +1,5 @@
 # 🤖 AI Detector Bypassers
-
+🚨WARNING: [Regarding Claudes New Invsible Watermark](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-7289DA?logo=discord&logoColor=white)](https://discord.gg/8mtJc3w4DT)
 [![GitHub](https://img.shields.io/badge/GitHub-@yofriendfromschool1-181717?logo=github)](https://github.com/yofriendfromschool1)
 
