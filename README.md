@@ -1,5 +1,6 @@
 # 🤖 AI Detector Bypassers
 # 🚨WARNING: [Regarding Claudes New Inivsible AI Generated Watermark](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content)
+- strip via CleanPaste + plain-text paste; don’t submit from Claude’s export if it embeds markers.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-7289DA?logo=discord&logoColor=white)](https://discord.gg/8mtJc3w4DT)
 [![GitHub](https://img.shields.io/badge/GitHub-@yofriendfromschool1-181717?logo=github)](https://github.com/yofriendfromschool1)
@@ -7,6 +8,7 @@
 > Bypass AI detectors, AI tools, cheating resources, and more.
 
 > **📌 NOTE:** If any links are down, use [archive.org](https://archive.org) to find cached versions.
+> **Disclaimer:** This repo is for educational research on AI detection limitations and local LLM tooling. Academic dishonesty can violate school policy. Use local models and writing tools responsibly.
 
 ---
 - https://hermes-agent.nousresearch.com/
@@ -14,6 +16,9 @@
 ## 📑 Table of Contents
 
 - [Remote Access Setup](#-remote-access-setup)
+- [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
+- [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
+- [Cheap Multi-Model Access](#-cheap-multi-model-access)
 - [AI Tools & Chatbots](#-ai-tools--chatbots)
 - [AI Comparison & Benchmarking Platforms](#-ai-comparison--benchmarking-platforms)
 - [AI Smart Glasses & Accessories](#-ai-smart-glasses--accessories)
@@ -285,17 +290,6 @@ Hugging Face Unsloth models	https://huggingface.co/unsloth(opens in new tab)
 
 
 ---
-
-## 3. Other sections worth adding
-
-### A. Table of Contents entries
-
-```markdown
-- [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
-- [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
-- [Cheap Multi-Model Access](#-cheap-multi-model-access)
-B. Local AI stack (short)
-
 ## 💻 Local AI Stack (Ollama / LM Studio / Open WebUI)
 
 | Tool | Link | Role |
@@ -460,7 +454,7 @@ Works best on Claude / GLM / Qwen.
 | Undetectable.aipro | [undetectableai.pro](https://www.undetectableai.pro/) |
 | Walter Writes AI | [walterwrites.ai](https://walterwrites.ai/) |
 | CleverHumanizer | [cleverhumanizer.ai](https://cleverhumanizer.ai/) |
-| RewriteIQ | [rewriteiq.com](https://rewriteiq.com/)
+| RewriteIQ | [rewriteiq.com](https://rewriteiq.com/) |
 | TheContentGPT | [TheContentGPT](https://thecontentgpt.com)
 | GPTinf | [app.gptinf.com](https://app.gptinf.com/) |
 | Cognibypass | [cognibypass.com](https://cognibypass.com/bypass) |
@@ -748,7 +742,7 @@ Works best on Claude / GLM / Qwen.
 > Use high burstiness and high perplexity. Don't be too repetitive. Don't use em dashes or en dashes. Write more human-like. Don't use unnecessary words and phrases. Don't use wording or big words that only a person in college or a writer would know. You can use professional writers like Mark Twain, Hemingway, and Shakespeare (or any more writers) as an example for your writing style **BUT DO NOT MENTION THEM**. Make it have 0% in AI detectors like ZeroGPT, GPTZero, Originality.ai, CopyLeaks, TurnItIn. And Non-AI detectors, models like Claude or ChatGPT or Gemini if pasted into there it won't detect it as AI.
 >
 > *(Best used with unpopular but high-quality latest AI models like Claude or GLM. Ask research AI like Perplexity, Grok, or an unbiased AI which model to use — you can even ask for a prompt for it.)*
-
+> *(Less-common models often score lower on detectors that were tuned mostly on ChatGPT/Claude output. Rotating writers (Claude → GLM → Qwen → local fine-tune) beats using one model forever. Always verify with multiple detectors.)*
 ---
 
 ## 🔄 My Personal Workflow
