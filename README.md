@@ -115,6 +115,244 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 ---
 
+## 🦥 Local Fine-Tuning with Unsloth (Train on YOUR Writing Style)
+
+> **Why this matters:** The strongest free method is fine-tuning a local model on *your* old essays, discussion posts, and lowest-AI-detected writing. Detectors struggle more with text that matches a real student's voice than with generic humanizers.
+
+**Official docs:** [unsloth.ai/docs](https://unsloth.ai/docs) · [GitHub](https://github.com/unslothai/unsloth) · [Notebooks](https://docs.unsloth.ai/get-started/unsloth-notebooks)
+
+### What is Unsloth?
+
+Unsloth makes LoRA/QLoRA fine-tuning ~2× faster and uses ~60–70% less VRAM/unified memory than stock Hugging Face. You can:
+- Train on Colab/Kaggle for free, or locally on NVIDIA / some AMD / Apple (via export + llama.cpp)
+- Start from 4-bit models and export to **GGUF** for **Ollama**, **LM Studio**, **llama.cpp**
+- Teach a model *your* tone, vocabulary, and essay structure
+
+> **Note:** Unsloth *training* is best on **Linux / WSL / Windows + NVIDIA CUDA**. On **Mac (Apple Silicon)**, train in Colab or a cheap cloud GPU, then run the exported GGUF locally in LM Studio/Ollama using unified memory.
+
+---
+
+### Install Unsloth (Local — NVIDIA recommended)
+
+#### Option A — Pip (simplest)
+
+```bash
+# Python 3.10–3.12, CUDA GPU, recent PyTorch already installed
+pip install --upgrade pip
+pip install unsloth ```
+Option B — Conda (more controlled)
+
+conda create --name unsloth_env python=3.11 pytorch-cuda=12.1 pytorch cudatoolkit -c pytorch -c nvidia -y
+conda activate unsloth_env
+pip install unsloth
+Option C — Free cloud (no GPU at home)
+Open an Unsloth Colab notebook(opens in new tab)
+Start with Llama 3.1 8B Alpaca or Qwen3 4B/8B notebook
+Upload your dataset → train → download LoRA or GGUF
+Option D — Docker
+See: unsloth.ai/docs — Docker install(opens in new tab)
+
+Check your memory first
+What you have	How to check
+NVIDIA VRAM	nvidia-smi
+Apple unified memory	Apple menu → About This Mac → Memory (M1/M2/M3/M4)
+Total usable (rough)	VRAM or unified RAM − ~4–8 GB for OS/apps
+Rules of thumb:
+
+Fine-tune (QLoRA 4-bit): needs more headroom than inference
+Inference (GGUF Q4): file size ≈ minimum RAM/VRAM; add 2–8 GB for context
+MoE models: memory follows total params, not “active” params
+Models by unified memory / VRAM
+Numbers are practical minimums for Q4 / QLoRA-style use. Leave headroom for OS + context.
+
+Inference (running a model — Ollama / LM Studio / llama.cpp)
+Unified memory / VRAM	Recommended models	Hugging Face / Unsloth IDs (examples)	Best for
+8 GB	Phi-4-mini, Qwen3 1.7B–4B, Gemma 4 E2B, Llama 3.2 3B	unsloth/Llama-3.2-3B-Instruct, small Qwen3	Short paragraphs, outlines
+12–16 GB	Qwen3.5 9B, Gemma 4 12B, Llama 3.1 8B, gpt-oss-20B (tight), Mistral 7B/12B	unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, Gemma 4 12B GGUF	Everyday essays
+24 GB	Qwen3 14B–27B, Gemma 4 27–31B, gpt-oss-20B (comfortable), Qwen3.6 35B-A3B (Q3/Q4)	unsloth/Qwen3-14B-bnb-4bit, Gemma 4 31B Q4	Best single-GPU quality
+32–36 GB	Qwen3.6 35B-A3B (sweet spot), 32B dense Q4/Q5	Qwen3.6-35B-A3B Q4_K_M	Best local all-rounder
+48–64 GB	70B-class Q3/Q4, large MoEs lightly, Qwen coder-class	Llama 70B Q3/Q4, large Qwen	Near-API quality offline
+64 GB+	70B Q5/Q6, big MoEs, multi-model	—	Power users / Mac Studio
+Fine-tuning with Unsloth (QLoRA 4-bit — approximate minimums)
+Model size	QLoRA (4-bit) VRAM	LoRA (16-bit) VRAM	Good starter models
+~3B	~3.5 GB	~8 GB	Llama 3.2 3B, Qwen3 4B, Ministral 3B
+~7–8B	~5–6 GB	~19–22 GB	Llama 3.1 8B, Qwen3 8B
+~14B	~8.5 GB	~33 GB	Qwen3 14B
+~20–27B	~14–22 GB	~44–64 GB	gpt-oss-20B, Gemma 4 27B
+~32B	~26 GB	~76 GB	Qwen 32B-class
+~70B	~41 GB	~164 GB	Needs datacenter / multi-GPU
+If you OOM: set per_device_train_batch_size=1, lower max_seq_length (e.g. 1024–2048), enable 4-bit, reduce LoRA r (e.g. 8–16).
+
+Quick pick guide (writing-style fine-tunes)
+Your hardware	Train this	Then run via
+Colab free / 8–12 GB	Llama 3.2 3B or Qwen3 4B	GGUF → LM Studio
+16 GB (RTX 4060 Ti / laptop)	Llama 3.1 8B or Qwen3 8B Instruct	Ollama / LM Studio
+24 GB (3090 / 4090 / 5090)	Qwen3 14B or gpt-oss-20B	Ollama / vLLM
+Mac 16 GB unified	Train in Colab → export GGUF	LM Studio (Gemma 4 12B / Llama 8B)
+Mac 32–64 GB unified	Train remote or small local	Qwen3.6-35B-A3B or Gemma 4 31B Q4
+64 GB+ Mac Studio / multi-GPU	Larger Qwen / 70B Q4	LM Studio / llama.cpp
+Minimal fine-tune example (your writing style)
+1. Build a dataset from your real work (JSONL), 100–500+ high-quality examples beat 10k junk:
+
+
+{"conversations": [
+  {"role": "user", "content": "Write a short paragraph on climate policy for a high school essay."},
+  {"role": "assistant", "content": "PASTE YOUR REAL WRITING HERE — same tone, length, mistakes style you actually use."}
+]}
+Tips:
+
+Use old essays, journal entries, graded papers (your words)
+Include variety: short answers, long essays, different subjects
+Keep your vocabulary level — don’t “upgrade” every sample to college-professor English
+Optional: mix in “rewrite this more like me” pairs
+2. Load + attach LoRA
+
+
+from unsloth import FastLanguageModel
+
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name = "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",  # or unsloth/Qwen3-8B-bnb-4bit
+    max_seq_length = 2048,
+    load_in_4bit = True,
+)
+
+model = FastLanguageModel.get_peft_model(
+    model,
+    r = 16,
+    lora_alpha = 16,
+    lora_dropout = 0,
+    target_modules = [
+        "q_proj", "k_proj", "v_proj", "o_proj",
+        "gate_proj", "up_proj", "down_proj",
+    ],
+)
+3. Train with SFTTrainer (see Unsloth notebooks for full trainer block). Start with:
+
+per_device_train_batch_size = 2
+gradient_accumulation_steps = 4
+learning_rate = 2e-4
+max_steps = 60 (test) or num_train_epochs = 1–3 (full)
+Aim for training loss roughly 0.5–1.0 (task-dependent); loss → 0 often means overfitting
+4. Export for local chat apps
+
+
+# GGUF for Ollama / LM Studio / llama.cpp
+model.save_pretrained_gguf(
+    "my-writing-model",
+    tokenizer,
+    quantization_method = "q4_k_m",
+)
+
+# Ollama
+echo 'FROM ./my-writing-model/unsloth.Q4_K_M.gguf' > Modelfile
+ollama create my-writer -f Modelfile
+ollama run my-writer "Write a body paragraph about the New Deal in my usual style."
+Or drag the GGUF into LM Studio(opens in new tab).
+
+Recommended Unsloth model IDs for writing fine-tunes
+Tier	Model ID (examples)	Why
+Beginner / low VRAM	unsloth/Llama-3.2-3B-Instruct	Fast experiments
+Best starter	unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit	Docs + notebooks everywhere
+Best open writing (mid)	unsloth/Qwen3-8B-bnb-4bit or Qwen3.5 9B-class	Strong prose + instruct
+24 GB sweet spot	Qwen3 14B / gpt-oss-20B Unsloth quants	Serious local writer
+Quality per GB	Gemma 4 12B / 31B (Unsloth or GGUF)	Great on 16–24 GB
+Style sandbox	Any Instruct model you actually like zero-shot	Fine-tune only helps if base already writes well
+Prefer unsloth/...-unsloth-bnb-4bit or official Unsloth quants when available (dynamic 4-bit ≈ better accuracy than naive BnB).
+
+End-to-end local workflow (pairs with Personal Workflow)
+Collect 20–100+ of your past writings
+Format as chat/instruction JSONL
+QLoRA fine-tune 8B–14B with Unsloth (Colab if needed)
+Export Q4_K_M GGUF → Ollama or LM Studio
+Generate draft locally with system prompt: “Write like the samples you were trained on. No em dashes. Varied sentence length.”
+Light human pass + CleanPaste(opens in new tab)
+Verify on ZeroGPT / GPTZero / Originality / Sapling
+Privacy win: drafts never leave your machine.
+
+Links
+Resource	URL
+Unsloth docs	https://unsloth.ai/docs(opens in new tab)
+Install	https://unsloth.ai/docs/get-started/install(opens in new tab)
+VRAM table	https://unsloth.ai/docs/get-started/fine-tuning-for-beginners/unsloth-requirements(opens in new tab)
+Free notebooks	https://docs.unsloth.ai/get-started/unsloth-notebooks(opens in new tab)
+GGUF export	https://unsloth.ai/docs(opens in new tab) (Saving to GGUF)
+Ollama	https://ollama.com(opens in new tab)
+LM Studio	https://lmstudio.ai(opens in new tab)
+Open WebUI	https://github.com/open-webui/open-webui(opens in new tab)
+Hugging Face Unsloth models	https://huggingface.co/unsloth(opens in new tab)
+
+
+---
+
+## 3. Other sections worth adding
+
+### A. Table of Contents entries
+
+```markdown
+- [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
+- [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
+- [Cheap Multi-Model Access](#-cheap-multi-model-access)
+B. Local AI stack (short)
+
+## 💻 Local AI Stack (Ollama / LM Studio / Open WebUI)
+
+| Tool | Link | Role |
+|------|------|------|
+| **LM Studio** | https://lmstudio.ai | Easiest GUI; great on Mac unified memory |
+| **Ollama** | https://ollama.com | CLI + API; `ollama run qwen2.5` etc. |
+| **Open WebUI** | https://github.com/open-webui/open-webui | ChatGPT-like UI on top of Ollama |
+| **llama.cpp** | https://github.com/ggml-org/llama.cpp | Backend for GGUFs |
+| **vLLM** | https://github.com/vllm-project/vllm | Fast multi-user (NVIDIA server) |
+
+**Mac tip:** Unified memory (M-series) runs Q4/Q5 GGUFs very well. Prefer **LM Studio** or **Ollama**. Train with Unsloth on Colab/NVIDIA, run at home on Mac.
+C. Cheap multi-model access
+
+## 💸 Cheap Multi-Model Access
+
+| Platform | Why use it |
+|----------|------------|
+| [OpenRouter](https://openrouter.ai/) | One key → Claude, GLM, Qwen, DeepSeek, Mistral, etc. Pay-as-you-go |
+| [Arena](https://arena.ai) | Free side-by-side; pick which model sounds most human |
+| [Yupp AI](https://yupp.ai/) | Many models + community |
+| [ISH](https://beta.ish.chat) | Mentioned in workflow; cheap experiments |
+| [Groq](https://groq.com/) | Fast Llama/Qwen-class inference |
+| [Together](https://together.ai/) / [Fireworks](https://fireworks.ai/) | Open-model APIs |
+
+> Rotate models. Detectors and teachers both overfit on “sounds like ChatGPT.”
+D. Expand “Best AI Models” table
+
+### Best AI Models (Writing-Focused)
+
+| Model | Strength | Best used for | Cost vibe |
+|-------|----------|---------------|-----------|
+| Claude (Opus/Sonnet) | Most human long-form | Final rewrite + Prompt 9 | $$ |
+| GLM (z.ai) | Human-sounding, less GPT cadence | Rewrite alternative to Claude | $ |
+| Qwen3.x / Max | Instruction + solid prose | Drafts + local fine-tune base | $ / free local |
+| DeepSeek V3/V4 | Strong cheap generalist | First drafts, STEM explainers | ¢ |
+| Gemini Pro/Flash | Research + structure | Sources, outlines, STEM | $ / free tier |
+| Grok | Casual Gen Z voice | Informal tone only | $ |
+| Kimi | Long context | Long papers from many PDFs | $ |
+| Mistral Large | Different “accent,” clean prose | When US models feel samey | $ |
+| ChatGPT | General / tools / browsing | Outlines, not always final voice | $ |
+| Local fine-tune (Unsloth) | **Your** voice | Final voice match offline | Free (hardware) |
+
+**Ranked workflow suggestion:**
+1. Research: Perplexity / Gemini / Kimi  
+2. Structure: any smart model  
+3. Human prose pass: **Claude or GLM** + Prompt 9  
+4. Optional: local Unsloth model trained on your writing  
+5. Humanizer only if still flagged (TwainGPT etc.)  
+6. CleanPaste → multi-detector check
+E. Dataset / style-cloning tip (under workflow or Unsloth)
+
+### 🧬 Style cloning without training (fast)
+
+If you can't fine-tune yet, paste 3–5 of your real paragraphs and prompt:
+
+> Analyze my writing samples (vocabulary level, sentence length variety, common transitions, how I open paragraphs, how formal I am). Then rewrite the following assignment **indistinguishably in my voice**. Do not sound more educated than the samples. Do not use em dashes. Vary sentence length. Avoid generic AI transitions (Furthermore, In conclusion, It is important to note).
+
+Works best on Claude / GLM / Qwen.
+
 ---
 
 ## 🌐 Agentic AI Browsers
