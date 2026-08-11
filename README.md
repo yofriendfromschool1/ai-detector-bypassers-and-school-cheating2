@@ -139,12 +139,14 @@ Unsloth makes LoRA/QLoRA fine-tuning ~2× faster and uses ~60–70% less VRAM/un
 ```bash
 # Python 3.10–3.12, CUDA GPU, recent PyTorch already installed
 pip install --upgrade pip
-pip install unsloth ```
+pip install unsloth
+```
 Option B — Conda (more controlled)
-
+```bash
 conda create --name unsloth_env python=3.11 pytorch-cuda=12.1 pytorch cudatoolkit -c pytorch -c nvidia -y
 conda activate unsloth_env
 pip install unsloth
+```
 Option C — Free cloud (no GPU at home)
 Open an Unsloth Colab notebook(opens in new tab)
 Start with Llama 3.1 8B Alpaca or Qwen3 4B/8B notebook
