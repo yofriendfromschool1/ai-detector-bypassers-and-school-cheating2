@@ -16,6 +16,7 @@
 ## 📑 Table of Contents
 
 - [Remote Access Setup](#-remote-access-setup)
+- [Optima by Artificial Analysis (Custom Benchmarking)](#-optima-by-artificial-analysis-custom-benchmarking)
 - [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
 - [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
 - [Cheap Multi-Model Access](#-cheap-multi-model-access)
@@ -36,6 +37,17 @@
 - [Extra Tips & Tricks](#-extra-tips--tricks)
 - [AI Leaderboards & Benchmarks](#-ai-leaderboards--benchmarks)
 - [Agentic Browsers](#-agentic-ai-browsers)
+
+---
+
+### 🎯 Optima by Artificial Analysis (Custom Benchmarking)
+
+> **Optima** is a self-serve platform from [Artificial Analysis](https://artificialanalysis.ai/) that lets you build **custom benchmarks** around your own tasks, datasets, or agent traces [[1], [4]]. 
+> 
+> Instead of relying on generic public leaderboards, you can upload your own "humanized" writing prompts, essay datasets, or bypass workflows to see exactly which model performs best for *your* specific needs [[22]]. It compares models on intelligence, output speed, latency, and API cost efficiency so you don't waste credits guessing which model sounds the most human or evades detectors the best [[25]].
+>
+> - **Link:** [artificialanalysis.ai/optima](https://artificialanalysis.ai/optima)
+> - **Best for:** Finding the absolute best model for your specific bypass prompts, choosing a base model for Unsloth fine-tuning, or testing automated agentic workflows.
 
 ---
 
