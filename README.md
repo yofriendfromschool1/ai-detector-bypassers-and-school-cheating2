@@ -333,7 +333,7 @@ D. Expand “Best AI Models” table
 
 | Model | Strength | Best used for | Cost vibe |
 |-------|----------|---------------|-----------|
-| Claude (Opus/Sonnet) | Most human long-form | Final rewrite + Prompt 9 | $$ |
+| Claude (Opus/Sonnet) | Most human long-form | Final rewrite + prompt 10 | $$ |
 | GLM (z.ai) | Human-sounding, less GPT cadence | Rewrite alternative to Claude | $ |
 | Qwen3.x / Max | Instruction + solid prose | Drafts + local fine-tune base | $ / free local |
 | DeepSeek V3/V4 | Strong cheap generalist | First drafts, STEM explainers | ¢ |
@@ -347,7 +347,7 @@ D. Expand “Best AI Models” table
 **Ranked workflow suggestion:**
 1. Research: Perplexity / Gemini / Kimi  
 2. Structure: any smart model  
-3. Human prose pass: **Claude or GLM** + Prompt 9  
+3. Human prose pass: **Claude or GLM** + prompt 10  
 4. Optional: local Unsloth model trained on your writing  
 5. Humanizer only if still flagged (Verva (formerly TwainGPT) etc.)  
 6. CleanPaste → multi-detector check
@@ -460,10 +460,13 @@ Works best on Claude / GLM / Qwen.
 ## 🔓 AI Bypassers & Humanizers
 
 ### Dedicated Humanizer Tools
+- https://huggingface.co/how-to-humanize-claude-output-2026
 
 | Name | Link |
 |------|------|
 | Undetectable.aipro | [undetectableai.pro](https://www.undetectableai.pro/) |
+| HumanizeMyPaper | [humanizemypaper.com](https://humanizemypaper.com/) |
+| ThesisHuman | [thesishuman.com](https://www.thesishuman.com/) |
 | Walter Writes AI | [walterwrites.ai](https://walterwrites.ai/) |
 | CleverHumanizer | [cleverhumanizer.ai](https://cleverhumanizer.ai/) |
 | RewriteIQ | [rewriteiq.com](https://rewriteiq.com/) |
@@ -747,9 +750,10 @@ Works best on Claude / GLM / Qwen.
 | 6 | Write like Shakespeare |
 | 7 | Write like (any good writer or human) |
 | 8 | Use high burstiness and high perplexity. |
-| 9 | *(See below — the ultimate prompt)* |
+| 9 | Rewrite the text below in a natural human voice. Do not use hedging phrases like 'may suggest', 'could be argued', 'it is worth considering', or 'one perspective is'. Vary sentence length dramatically — mix 6-word sentences with 30-word sentences. Use one contraction per paragraph. Do not open paragraphs with meta-organizational language. Keep all factual claims intact. Text to rewrite: [paste your original Claude output] |
+| 10 | *(See below — the ultimate prompt)* |
 
-### 🏆 Prompt 9 (The Ultimate Prompt)
+### 🏆 prompt 10 (The Ultimate Prompt)
 
 > Use high burstiness and high perplexity. Don't be too repetitive. Don't use em dashes or en dashes. Write more human-like. Don't use unnecessary words and phrases. Don't use wording or big words that only a person in college or a writer would know. You can use professional writers like Mark Twain, Hemingway, and Shakespeare (or any more writers) as an example for your writing style **BUT DO NOT MENTION THEM**. Make it have 0% in AI detectors like ZeroGPT, GPTZero, Originality.ai, CopyLeaks, TurnItIn. And Non-AI detectors, models like Claude or ChatGPT or Gemini if pasted into there it won't detect it as AI.
 >
@@ -760,7 +764,7 @@ Works best on Claude / GLM / Qwen.
 ## 🔄 My Personal Workflow
 
 1. **Research:** Use [Perplexity](https://www.perplexity.ai/) or [Grok 4.20 search](https://grok.com/) for the research assignment
-2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) or [ISH](https://beta.ish.chat) ) and have it rewrite using **Prompt 9**
+2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) or [ISH](https://beta.ish.chat) ) and have it rewrite using **prompt 10**
 3. **Rewrite again:** Optionally have Claude rewrite it again with the same prompt
 4. **Humanize:** Use [Verva (previously TwainGPT)](https://verva.com/) with **English (US)** and **Pro** — run it through **twice**
 5. **Remove AI Watermarks** Use [Cleanpaste.site](https://cleanpaste.site)
