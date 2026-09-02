@@ -349,7 +349,7 @@ D. Expand “Best AI Models” table
 2. Structure: any smart model  
 3. Human prose pass: **Claude or GLM** + Prompt 9  
 4. Optional: local Unsloth model trained on your writing  
-5. Humanizer only if still flagged (TwainGPT etc.)  
+5. Humanizer only if still flagged (Verva (formerly TwainGPT) etc.)  
 6. CleanPaste → multi-detector check
 E. Dataset / style-cloning tip (under workflow or Unsloth)
 
@@ -477,7 +477,7 @@ Works best on Claude / GLM / Qwen.
 | uPassAI | [upass.ai](https://upass.ai/) |
 | Conch AI | [getconch.ai](https://www.getconch.ai/) |
 | Undetectable AI | [undetectable.ai](https://undetectable.ai/detector-humanizer) |
-| TwainGPT | [app.twaingpt.com](https://app.twaingpt.com/dashboard) |
+| Verva (previously TwainGPT) | [verva.com](https://verva.com/) |
 | Lady Bug AI | [ladybugai.us](https://ladybugai.us/humanizer) |
 | Grubby.AI | [grubby.ai](https://grubby.ai/dashboard/humanizer) |
 | Surferseo | [surferseo.com](https://surferseo.com/ai-humanizer/) |
@@ -762,7 +762,7 @@ Works best on Claude / GLM / Qwen.
 1. **Research:** Use [Perplexity](https://www.perplexity.ai/) or [Grok 4.20 search](https://grok.com/) for the research assignment
 2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) or [ISH](https://beta.ish.chat) ) and have it rewrite using **Prompt 9**
 3. **Rewrite again:** Optionally have Claude rewrite it again with the same prompt
-4. **Humanize:** Use [TwainGPT](https://app.twaingpt.com/dashboard) with **English (US)** and **Pro** — run it through **twice**
+4. **Humanize:** Use [Verva (previously TwainGPT)](https://verva.com/) with **English (US)** and **Pro** — run it through **twice**
 5. **Remove AI Watermarks** Use [Cleanpaste.site](https://cleanpaste.site)
 6. **Verify:** Check with all of these to ensure 0%:
    - [Originality.ai](https://originality.ai/)
@@ -810,7 +810,7 @@ sudo mount -o remount,rw,hidepid=2 /proc
 
 | Tier | Tools |
 |------|-------|
-| **Paid** | TwainGPT, Cognibypass, Humbot, BypassGPT, Walter Writes AI, RewriteIQ |
+| **Paid** | Verva (previously TwainGPT), Cognibypass, Humbot, BypassGPT, Walter Writes AI, RewriteIQ |
 | **Free** | Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT, Clever Humanizer |
 
 > **💡 Another free method:** Feed the AI your own old writing samples so it can train on your style. The more you give, the better. You can also use your lowest AI-detected content as training material.
