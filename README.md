@@ -766,7 +766,7 @@ Works best on Claude / GLM / Qwen.
 1. **Research:** Use [Perplexity](https://www.perplexity.ai/) or [Grok 4.20 search](https://grok.com/) for the research assignment
 2. **Rewrite:** Copy the text into [Claude](https://claude.ai/) or [GLM](https://z.ai) (can use [OpenRouter](https://openrouter.ai/) to be really cheap or [Arena](https://arena.ai) or [ISH](https://beta.ish.chat) ) and have it rewrite using **prompt 10**
 3. **Rewrite again:** Optionally have Claude rewrite it again with the same prompt
-4. **Humanize:** Use [Verva (previously TwainGPT)](https://verva.com/) with **English (US)** and **Pro** — run it through **twice**
+4. **Humanize:** Use [Verva (previously TwainGPT)](https://verva.com/) with **English (US)** and **Pro** — run it through **twice** and if thats not good enough use with  [CleverHumanizer](https://cleverhumanizer.ai/)
 5. **Remove AI Watermarks** Use [Cleanpaste.site](https://cleanpaste.site)
 6. **Verify:** Check with all of these to ensure 0%:
    - [Originality.ai](https://originality.ai/)
