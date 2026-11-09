@@ -631,6 +631,9 @@ Works best on Claude / GLM / Qwen.
 
 ## 🎮 Platform-Specific Cheats
 
+### Quill
+- [quill-cheat](https://github.com/ImPotassium/quill-cheat)
+
 ### Kahoot
 
 - [CPScript/Kitty-Tools](https://github.com/CPScript/Kitty-Tools)
