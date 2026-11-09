@@ -607,7 +607,7 @@ Works best on Claude / GLM / Qwen.
 - [strix/canvas-hack (GitHub)](https://github.com/strix/canvas-hack)
 - [Cracked CanvasHack](https://github.com/WendellBounty/CanvasHackCrack) *(also look at commits/directory 😉)*
 - [Canvas Quiz Loader (Chrome)](https://chromewebstore.google.com/detail/canvas-quiz-loader/pfagnepdndhkmilceinbebdfbmiddagl?hl=en)
-- [Always Active Window (Chrome)](https://chromewebstore.google.com/detail/always-active-window-alwa/ehllkhjndgnlokhomdlhgbineffifcbj)
+- [Always Active Window](https://webextension.org/listing/always-active.html)
 - [brian-girko/always-active (GitHub)](https://github.com/brian-girko/always-active)
 
 > **Canvas Tip:** Use Canvas Blocker or a browser in a VM so it doesn't detect when you leave the page.
@@ -619,7 +619,7 @@ Works best on Claude / GLM / Qwen.
 
 ### Video Speed Controller
 
-> Useful for finishing required videos quickly. You can also use Cheat Engine attached to the browser to speed things up.
+> Useful for finishing required videos quickly. You can also use Cheat Engine attached to the browser to speed things up. also [TimerHooker](https://greasyfork.org/en/scripts/372673-%E8%AE%A1%E6%97%B6%E5%99%A8%E6%8E%8C%E6%8E%A7%E8%80%85-%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%E8%B7%B3%E8%BF%87-%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A%E5%8A%A0%E9%80%9F%E5%99%A8)
 
 - [Chrome Extension](https://chromewebstore.google.com/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en)
 - [GitHub Source](https://github.com/igrigorik/videospeed)
@@ -634,6 +634,7 @@ Works best on Claude / GLM / Qwen.
 ### Quill
 - [quill-cheat](https://github.com/ImPotassium/quill-cheat)
 - - [quill-cheat](https://github.com/yofriendfromschool1/quill-cheat) (my fork)
+- [Always Active Window](https://webextension.org/listing/always-active.html)
 
 ### Kahoot
 
