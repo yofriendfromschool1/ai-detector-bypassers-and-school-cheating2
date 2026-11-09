@@ -633,6 +633,7 @@ Works best on Claude / GLM / Qwen.
 
 ### Quill
 - [quill-cheat](https://github.com/ImPotassium/quill-cheat)
+- - [quill-cheat](https://github.com/yofriendfromschool1/quill-cheat) (my fork)
 
 ### Kahoot
 
