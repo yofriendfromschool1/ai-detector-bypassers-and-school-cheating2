@@ -604,7 +604,7 @@ Works best on Claude / GLM / Qwen.
 
 ### Canvas Hacks
 
-- [CanvasHack](https://canvashack.com/)
+- [CanvasHack](https://canvashack.com/) https://discord.gg/8mtJc3w4DT ;)
 - [strix/canvas-hack (GitHub)](https://github.com/strix/canvas-hack)
 - [Cracked CanvasHack](https://github.com/WendellBounty/CanvasHackCrack) *(also look at commits/directory 😉)*
 - [Canvas Quiz Loader (Chrome)](https://chromewebstore.google.com/detail/canvas-quiz-loader/pfagnepdndhkmilceinbebdfbmiddagl?hl=en)
@@ -645,7 +645,7 @@ Works best on Claude / GLM / Qwen.
 ### Edgenuity
 
 - [kaidadnd/Edgenuity-Cheats](https://github.com/kaidadnd/Edgenuity-Cheats)
-- [RevoltX (Chrome)](https://chromewebstore.google.com/detail/revoltx/pmkhifhhfdlppeoadkbnpccbanmkggnd) *(also look at commits/directory 😉)*
+- [Revolt](https://revolt.ly/download) *(also look at commits/directory 😉)* https://discord.gg/8mtJc3w4DT ;)
 - [varTapexe/EdgyPro](https://github.com/varTapexe/EdgyPro)
 - [sassysassysalad/edgenuity](https://github.com/sassysassysalad/edgenuity)
 - [BINKS3435/edgenuity-hack](https://github.com/BINKS3435/edgenuity-hack)
