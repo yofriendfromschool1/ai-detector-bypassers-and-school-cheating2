@@ -464,6 +464,7 @@ Works best on Claude / GLM / Qwen.
 
 | Name | Link |
 |------|------|
+| AHumane| [AHumane](https://github.com/yofriendfromschool1/AHumane) |
 | Undetectable.aipro | [undetectableai.pro](https://www.undetectableai.pro/) |
 | HumanizeMyPaper | [humanizemypaper.com](https://humanizemypaper.com/) |
 | ThesisHuman | [thesishuman.com](https://www.thesishuman.com/) |
@@ -939,6 +940,7 @@ https://github.com/ubn2/CheckMyDraftAI
 
 *Made with ❤️ by [@yofriendfromschool1](https://github.com/yofriendfromschool1)*
 incase they find ai detected, argue:
+https://github.com/yofriendfromschool1/Proof
 AI detectors have no place in schools – they’re way too broken and unfair.
 Here’s the straight truth: these tools that promise to spot if a kid used ChatGPT or whatever are just not good enough. They miss real AI writing all the time and worse, they accuse innocent students of cheating way too often. Schools should stop using them completely. The false positives alone cause real damage, and the whole thing is too messy and biased to trust.
 Start with the big one – even OpenAI, the company behind ChatGPT, gave up on their own detector. They built it to catch AI text, but it only nailed 26% of the stuff that was actually written by AI. And it wrongly flagged 9% of real human writing as fake. If the creators can’t get it right, why would any school tool be better? They shut it down in 2023 because it was so unreliable.
