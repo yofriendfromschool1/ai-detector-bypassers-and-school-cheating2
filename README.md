@@ -685,8 +685,9 @@ Works best on Claude / GLM / Qwen.
 
 ### DeltaMath
 
-- [DxltaMath/DMIx](https://github.com/DxltaMath/DMIx)
+- [Alex347XD/DMIx](https://github.com/Alex347XD/DMIx)
 - [bribes/deltamath-equation-copier](https://github.com/bribes/deltamath-equation-copier)
+- [School Cheats](https://schoolcheats.net/deltamath)
 
 ### CrosswordLabs
 
