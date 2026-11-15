@@ -604,6 +604,7 @@ Works best on Claude / GLM / Qwen.
 
 ### Canvas Hacks
 
+- [StudyDock](https://github.com/yofriendfromschool1/StudyDock) Open-Source Canvas cheat extension.
 - [CanvasHack](https://canvashack.com/) https://discord.gg/8mtJc3w4DT ;)
 - [strix/canvas-hack (GitHub)](https://github.com/strix/canvas-hack)
 - [Cracked CanvasHack](https://github.com/WendellBounty/CanvasHackCrack) *(also look at commits/directory 😉)*
