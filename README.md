@@ -11,7 +11,14 @@
 > **Disclaimer:** This repo is for educational research on AI detection limitations and local LLM tooling. Academic dishonesty can violate school policy. Use local models and writing tools responsibly.
 
 ---
+### BEST HARNESSESS
 - https://hermes-agent.nousresearch.com/
+- https://omp.sh/
+- https://factory.com/news/frontier-harness
+- https://claude.com/product/claude-code
+- https://openai.com/codex/
+- https://github.com/storytold/craft-anything
+- https://github.com/morluto/rea
 
 ## 📑 Table of Contents
 
