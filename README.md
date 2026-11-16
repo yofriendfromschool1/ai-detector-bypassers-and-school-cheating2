@@ -1089,6 +1089,7 @@ https://github.com/ubn2/CheckMyDraftAI
 | Name | Link |
 |------|------|
 | Arena Leaderboard | [arena.ai/leaderboard](https://arena.ai/leaderboard) |
+| HumanizerBench | [humanizerbench.com](https://humanizerbench.com/) |
 | HuggingFace Arena | [huggingface.co](https://huggingface.co/spaces/arena-ai/chatbot-arena-leaderboard) |
 | OpenLM Arena | [openlm.ai](https://openlm.ai/chatbot-arena/) |
 | Vellum LLM Leaderboard | [vellum.ai](https://www.vellum.ai/llm-leaderboard) |
