@@ -567,6 +567,10 @@ Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute 
 | Microsoft Edge | Copilot Mode | **Free** | Partial | Multi-tab context awareness; natural voice navigation |
 | Claude for Chrome | Extension | Subscription | Full | Anthropic's Claude; site-level permissions; action confirmations |
 | Brave Leo | Built-in | Free / Premium | None (assistant only) | Chat, summarization—not autonomous |
+| Browserfly | Extension | BYOK | autonomous |
+| HARPA.AI | Extension | BYOK | autonomous |
+| Agentic Browser | Extension | BYOK | autonomous |
+| rtrvr.ai | Extension | BYOK | autonomous |
 
 ---
 
