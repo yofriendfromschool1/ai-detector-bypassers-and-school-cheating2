@@ -563,7 +563,7 @@ Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute 
 
 | Browser | AI Feature | Pricing | Agentic Level | Notes |
 |---------|------------|---------|---------------|-------|
-| Chrome + Gemini | Auto Browse | Limited free | Full | Google's agentic browsing via Gemini integration |
+| Chrome + Gemini | Auto Browse | Limited free | Full | Google's agentic browsing via Gemini integration (might need canary and to enable in flags glic) |
 | Microsoft Edge | Copilot Mode | **Free** | Partial | Multi-tab context awareness; natural voice navigation |
 | Claude for Chrome | Extension | Subscription | Full | Anthropic's Claude; site-level permissions; action confirmations |
 | Brave Leo | Built-in | Free / Premium | None (assistant only) | Chat, summarization—not autonomous |
