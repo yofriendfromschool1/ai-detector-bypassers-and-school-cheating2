@@ -78,6 +78,86 @@ This is the part that makes it **sound human**, not just structured:
 5. VERIFY     → ZeroGPT / GPTZero / Sapling / Originality (see detectors section)
 ```
 
+---
+
+## 🧠 Gentle AI: The Heavier Harness Layer for Pi / OMP
+
+> **Why this section exists:** The OMP + OmniRoute stack above is the lightweight, writing-focused setup. Gentle AI is the next step up if you want a **disciplined engineering environment** layered on top of Pi or OMP — SDD workflows, strict TDD evidence, subagent orchestration, memory, and review guardrails. It is not a replacement for OMP; it sits on top of it.
+
+### What Gentle AI is
+
+Gentle AI is an open-source project from Gentleman Programming that turns AI coding agents into "disciplined engineering environments" with SDD workflows, skills, memory integrations, model routing, and review guardrails across multiple agents. It is not tied to a single agent — it supports Pi, OpenCode, Claude Code, Codex, Cursor, and more than a dozen other agents, each using that agent's native capabilities.
+
+For Pi specifically, Gentle AI installs the **Gentleman harness** as Pi packages, then lets Pi own its own persona, models, SDD agents, chains, and memory wiring. The core package is `gentle-pi`, which adds:
+
+- **Gentleman persona** — a senior-architect operating layer, not a generic chatbot.
+- **Work routing discipline** — small tasks stay inline; context-heavy exploration can be delegated; large or risky changes go through SDD/OpenSpec.
+- **SDD/OpenSpec assets** — phase agents and chains for init, explore, proposal, spec, design, tasks, apply, verify, and archive.
+- **Subagent orchestration** — one parent session stays responsible while child agents explore, implement, test, or review with focused context.
+- **Strict TDD support** — apply/verify phases must record RED → GREEN → TRIANGULATE → REFACTOR evidence when a test command is declared.
+- **Reviewer protection** — surfaces review workload risk before a task turns into an oversized PR.
+- **Per-agent model assignment** — Pi-native modal for assigning stronger or cheaper models to specific SDD/custom agents.
+- **Skill discovery registry** — maintains `.atl/skill-registry.md` so review/comment/PR workflows do not silently miss the right skill.
+- **Delivery skills** — issue-first PRs, chained PRs, work-unit commits, cognitive docs, comment writing, and Judgment Day review.
+- **Shell safety** — blocks destructive shell commands and asks for confirmation on sensitive operations.
+
+### Install (Pi)
+
+```bash
+gentle-ai install --agent pi
+```
+
+This installs the Pi support stack, which runs exactly these steps:
+
+```bash
+pi install npm:gentle-pi
+pi install npm:gentle-engram
+pi install npm:pi-mcp-adapter
+pi exec --yes --package gentle-engram@latest -- pi-engram init
+pi install npm:@juicesharp/rpiv-ask-user-question
+pi install npm:pi-web-access
+pi install npm:pi-btw
+```
+
+Start Pi in your project and run `/gentle-ai:status` to check package, SDD assets, OpenSpec, and more.
+
+### Gentle AI + OMP (Oh My Pi)
+
+As of now, **OMP is a separate terminal agent and does not have first-class support in Gentle AI** — there is an open feature request to add OMP as a supported agent using Gentle AI's standard lifecycle while respecting OMP's native configuration, profiles, resource discovery, plugins, extensions, and MCP support. The integration is not yet shipped, so OMP users should treat Gentle AI as a **companion** rather than a drop-in layer: you can still use Gentle AI's concepts and skills alongside OMP, but the automated `gentle-ai install --agent pi` path targets Pi, not OMP.
+
+If you want the full Gentle AI harness experience on top of OMP right now, the practical options are:
+
+1. **Run Gentle AI with Pi** in parallel for engineering-heavy work, and keep OMP for writing (the stack above).
+2. **Use Gentle Shell** — a separate Pi workspace that adds ODD (Organic Driven Development), focused sub-agents, native diff review, Engram memory, background jobs, and permission modes. It is built on the Pi agent and is the closest "Gentle AI workspace" for Pi users.
+3. **Wait for the OMP integration** to land (track the issue above), then wire it in.
+
+### When to use Gentle AI vs. OMP alone
+
+| Need | Use |
+|------|-----|
+| Essays, schoolwork, prose, humanization | **OMP + OmniRoute** (the stack above) |
+| Structured engineering, SDD, TDD evidence, multi-file PRs | **Gentle AI + Pi** (or Gentle Shell) |
+| Both, in one workflow | OMP for writing; Gentle AI/Pi for code; OmniRoute routes models for both |
+| One harness to rule them all | Wait for first-class OMP support in Gentle AI, or use Gentle Shell as the Pi-based middle ground |
+
+Gentle AI is not a writing harness — it is an **engineering discipline layer**. The writing stack above remains the right choice for essays. Gentle AI is the answer to "I want OMP's power but with senior-architect guardrails and SDD/TDD structure."
+
+---
+
+## ⭐ Best Tools (My Opinion / Researched)
+
+### Best Writing Harness
+
+| Tier | Tool | Why |
+|------|------|-----|
+| **Best overall** | **Oh My Pi (OMP) + OmniRoute** | Multi-model routing, skills, sub-agents, writing pipeline. See the dedicated section above. |
+| **Most polished** | Claude Code | Mature writing skill ecosystem (`essay-skills`), strong long-form quality. Closed harness, no easy multi-model routing. |
+| **Heavier layer** | **Gentle AI / gentle-pi** | SDD/OpenSpec, strict TDD evidence, subagent orchestration, memory, review guardrails. Sits *on top of* Pi (OMP support pending). Not a writing harness — an engineering discipline layer. |
+| **Pi workspace** | Gentle Shell | ODD, focused sub-agents, native diff review, Engram memory. Built on Pi. |
+| **Editor-first** | Cursor | Good for selection-based prose editing. Not agent-first. |
+
+---
+
 **Key idea:** OMP is the writing harness. The skills are the writing process. OmniRoute is the model plumbing. The humanizers are the voice layer. Do not rely on OMP's coding defaults alone for essays.
 
 ### Prompting for a human voice (works with any model)
