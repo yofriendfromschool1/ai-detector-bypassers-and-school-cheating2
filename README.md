@@ -69,6 +69,7 @@ This is the part that makes it **sound human**, not just structured:
 | **`speak-like-you-eat` (SLYE)** | Pi/OMP-native plugin. Plain-language rewrite after generation. Strips big empty words. | Run `/slye` on demand or `/slye on` for auto. Built for your exact environment. |
 | **`humanizer`** (`kvokov/oh-my-ai/humaniser`) | Deep pattern-based cleaning. Targets `-ing` phrases, vague attributions, AI vocabulary (`delve`, `tapestry`, `pivotal`), em-dash overuse, boldface spam. **Voice calibration**: feed it your own writing samples and it matches your rhythm/diction. | The strongest general-purpose humanizer skill. |
 | **`anti-ai-detector`** (`jaychouya/anti-ai-detector`) | Tuned specifically to lower AI-detection risk in **academic writing** while preserving technical meaning. | Use as a final pass on graded essays. |
+| **`blader humanizer`** (`blader/humanizer`) | Tuned specifically to lower AI-detection risk in **academic writing** while preserving technical meaning. | Use as a final pass on graded essays. |
 
 ### The workflow (draft → humanize → verify)
 
