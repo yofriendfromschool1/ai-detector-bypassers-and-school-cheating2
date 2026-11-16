@@ -13,6 +13,8 @@
 
 ---
 
+- Always use low - high thinking also never use plan or goal just normal
+
 ### BEST HARNESSES
 - https://hermes-agent.nousresearch.com/
 - https://omp.sh/
