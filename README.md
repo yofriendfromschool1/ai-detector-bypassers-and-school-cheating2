@@ -15,6 +15,33 @@
 
 - Always use low - high thinking also never use plan or goal just normal
 
+## 📑 Table of Contents
+
+- [Remote Access Setup](#-remote-access-setup)
+- [Optima by Artificial Analysis (Custom Benchmarking)](#-optima-by-artificial-analysis-custom-benchmarking)
+- [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
+- [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
+- [Cheap Multi-Model Access](#-cheap-multi-model-access)
+- [AI Tools & Chatbots](#-ai-tools--chatbots)
+- [AI Comparison & Benchmarking Platforms](#-ai-comparison--benchmarking-platforms)
+- [AI Smart Glasses & Accessories](#-ai-smart-glasses--accessories)
+- [AI Bypassers & Humanizers](#-ai-bypassers--humanizers)
+- [AI Detectors](#-ai-detectors)
+- [Uncensored AI & Jailbreak Prompts](#-uncensored-ai--jailbreak-prompts)
+- [Self-Grading Tools](#-self-grading-tools)
+- [Cheating Tools & Extensions](#-cheating-tools--extensions)
+- [Platform-Specific Cheats](#-platform-specific-cheats)
+- [Secure Browser / Lockdown Browser Bypass](#-secure-browser--lockdown-browser-bypass)
+- [Useful Prompts for Humanized Writing](#-useful-prompts-for-humanized-writing)
+- [My Personal Workflow](#-my-personal-workflow)
+- [Best Tools (My Opinion / Researched)](#-best-tools-my-opinion--researched)
+- [Student Discounts (.edu)](#-student-discounts-edu)
+- [Extra Tips & Tricks](#-extra-tips--tricks)
+- [AI Leaderboards & Benchmarks](#-ai-leaderboards--benchmarks)
+- [Agentic Browsers](#-agentic-ai-browsers)
+
+---
+
 ### BEST HARNESSES
 - https://hermes-agent.nousresearch.com/
 - https://omp.sh/
@@ -190,33 +217,6 @@ Stay on OMP unless you hit a specific wall:
 - **Switch to Claude Code + `essay-skills`** only if OMP keeps "printing code instead of writing prose" even with writing skills installed, or if you want a single `/essay` command with zero setup. That's a polish trade-off, not a capability gap.
 - **Gentle-AI for Pi** is worth knowing if you want a heavier harness layer on top of Pi/OMP (SDD, TDD, RDD, 15 agents). It sits *on top of* your setup, not instead of it.
 - **Cursor** is editor-first, not agent-first. Less suited to a skill-driven pipeline.
-
----
-
-## 📑 Table of Contents
-
-- [Remote Access Setup](#-remote-access-setup)
-- [Optima by Artificial Analysis (Custom Benchmarking)](#-optima-by-artificial-analysis-custom-benchmarking)
-- [Local Fine-Tuning with Unsloth](#-local-fine-tuning-with-unsloth-train-on-your-writing-style)
-- [Local AI Stack (Ollama / LM Studio)](#-local-ai-stack-ollama--lm-studio--open-webui)
-- [Cheap Multi-Model Access](#-cheap-multi-model-access)
-- [AI Tools & Chatbots](#-ai-tools--chatbots)
-- [AI Comparison & Benchmarking Platforms](#-ai-comparison--benchmarking-platforms)
-- [AI Smart Glasses & Accessories](#-ai-smart-glasses--accessories)
-- [AI Bypassers & Humanizers](#-ai-bypassers--humanizers)
-- [AI Detectors](#-ai-detectors)
-- [Uncensored AI & Jailbreak Prompts](#-uncensored-ai--jailbreak-prompts)
-- [Self-Grading Tools](#-self-grading-tools)
-- [Cheating Tools & Extensions](#-cheating-tools--extensions)
-- [Platform-Specific Cheats](#-platform-specific-cheats)
-- [Secure Browser / Lockdown Browser Bypass](#-secure-browser--lockdown-browser-bypass)
-- [Useful Prompts for Humanized Writing](#-useful-prompts-for-humanized-writing)
-- [My Personal Workflow](#-my-personal-workflow)
-- [Best Tools (My Opinion / Researched)](#-best-tools-my-opinion--researched)
-- [Student Discounts (.edu)](#-student-discounts-edu)
-- [Extra Tips & Tricks](#-extra-tips--tricks)
-- [AI Leaderboards & Benchmarks](#-ai-leaderboards--benchmarks)
-- [Agentic Browsers](#-agentic-ai-browsers)
 
 ---
 
@@ -552,7 +552,7 @@ Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute 
 | Name | Link | Pricing | Best For | Notes |
 |------|------|---------|----------|-------|
 | Perplexity Comet | [perplexity.ai](https://www.perplexity.ai/) | **Free** | Research & automation | Comet Assistant can navigate web, access email/calendar, complete tasks autonomously |
-| ChatGPT Atlas | [openai.com](https://openai.com/) | Free / $20/mo Plus | ChatGPT users | Agent Mode for multi-step autonomous tasks (Plus only) |
+| BrowserOS | [browseros-ai/BrowserOS](https://github.com/browseros-ai/BrowserOS) | Free | w | Agent Mode for multi-step autonomous tasks |
 | Dia Browser | [thebrowser.company](https://thebrowser.company/) | Free (waitlist) | Privacy-conscious users | From Arc team; AI sidebar, context-aware assistant, learns from browsing history |
 | Fellou | [fellou.ai](https://fellou.ai/) | $20–$297/mo | Deep research | Deep Action Agent converts prompts to workflows; shows execution plan before acting |
 | Genspark | [genspark.ai](https://genspark.ai/) | Free / $25/mo Plus | Offline model access | Autopilot mode; can download and run models locally |
