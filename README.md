@@ -1,4 +1,5 @@
 # 🤖 AI Detector Bypassers
+
 # 🚨WARNING: [Regarding Claudes New Invisible AI Generated Watermark](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content)
 - strip via CleanPaste + plain-text paste; don’t submit from Claude’s export if it embeds markers.
 
@@ -11,7 +12,8 @@
 > **Disclaimer:** This repo is for educational research on AI detection limitations and local LLM tooling. Academic dishonesty can violate school policy. Use local models and writing tools responsibly.
 
 ---
-### BEST HARNESSESS
+
+### BEST HARNESSES
 - https://hermes-agent.nousresearch.com/
 - https://omp.sh/
 - https://factory.com/news/frontier-harness
@@ -19,6 +21,94 @@
 - https://openai.com/codex/
 - https://github.com/storytold/craft-anything
 - https://github.com/morluto/rea
+
+---
+
+## ✍️ Oh My Pi + OmniRoute: The Human-Sounding Writing Stack
+
+> **Why this section exists:** Most people here are using OMP (Oh My Pi) with OmniRoute already. This is the exact setup for writing, schoolwork, and essays that actually sounds human — not just "passes a detector" but reads like a real student wrote it. This is the workflow that pairs with the humanizers and detectors below.
+
+### Why OMP + OmniRoute for writing?
+
+- **OMP is the harness.** It supports sub-agents, skills, plugins, and output styles. You can run a real essay pipeline (research → outline → draft → critique → polish) instead of one-shot generation.
+- **OmniRoute is the model router.** You point writing tasks at a strong model for drafting and a cheaper one for cleanup. OMP talks to OmniRoute instead of hitting providers directly.
+- **You keep multi-model flexibility.** Rotating writers (Claude → GLM → Qwen → local fine-tune) beats using one model forever, and OMP + OmniRoute makes that trivial.
+
+**Don't switch harnesses for writing.** The bottleneck is skills and model routing, not the harness. OMP gives you both.
+
+### Setup
+
+```bash
+# Wire OMP to OmniRoute
+omniroute setup-omp
+```
+
+This writes an OmniRoute provider into `~/.omp/agent/models.yml` and can merge model roles into `~/.omp/agent/config.yml`. OMP now routes through OmniRoute.
+
+### Install the writing skills
+
+These change OMP's behavior far more than a harness swap would:
+
+| Skill | What it does | Install |
+|-------|-------------|---------|
+| **`essay-skills`** (`clyderankin/essay-skills`) | Six-step pipeline: **brief → outline → draft → revise → review → polish**. Creates artifacts so the essay stays coherent across steps. | `npx skills add clyderankin/essay-skills` |
+| **`human-readable-writing`** (`JangHyun-bin/human-readable-writing`) | OMP-native. Rewrites compressed noun phrases, keeps claims next to evidence, orders info for the reader. | Manual install into `~/.omp/agent/` |
+| **`carpenter`** (`Jeffallan/writing-with-agents`) | Turns an approved outline into clear prose, section by section. | Install via skills CLI |
+| **`pi-output-styles`** (`LoneExile/pi-output-styles`) | Live `/style` switching: `teacher`, `reviewer`, `concise`, `explanatory`, `ste`. | Install into OMP |
+| **`academic-research-skills`** (`Imbad0202/academic-research-skills`) | 13-agent research team, 12-agent paper writer, multi-perspective reviewer. For longer papers. | Install via skills CLI |
+| **`slidev`** (in `pi-skills`) | Build/export Slidev presentations. For school decks. | `omp install` from repo |
+
+### Install the humanization skills
+
+This is the part that makes it **sound human**, not just structured:
+
+| Skill | What it does | Notes |
+|-------|-------------|-------|
+| **`speak-like-you-eat` (SLYE)** | Pi/OMP-native plugin. Plain-language rewrite after generation. Strips big empty words. | Run `/slye` on demand or `/slye on` for auto. Built for your exact environment. |
+| **`humanizer`** (`kvokov/oh-my-ai/humaniser`) | Deep pattern-based cleaning. Targets `-ing` phrases, vague attributions, AI vocabulary (`delve`, `tapestry`, `pivotal`), em-dash overuse, boldface spam. **Voice calibration**: feed it your own writing samples and it matches your rhythm/diction. | The strongest general-purpose humanizer skill. |
+| **`anti-ai-detector`** (`jaychouya/anti-ai-detector`) | Tuned specifically to lower AI-detection risk in **academic writing** while preserving technical meaning. | Use as a final pass on graded essays. |
+
+### The workflow (draft → humanize → verify)
+
+```
+1. DRAFT      → Use essay-skills pipeline in OMP (brief → outline → draft)
+2. QUICK PASS → /slye in OMP for immediate plain-language rewrite
+3. DEEP PASS  → Run humanizer skill (with voice calibration if you have samples)
+4. ACADEMIC   → Run anti-ai-detector skill for graded work
+5. VERIFY     → ZeroGPT / GPTZero / Sapling / Originality (see detectors section)
+```
+
+**Key idea:** OMP is the writing harness. The skills are the writing process. OmniRoute is the model plumbing. The humanizers are the voice layer. Do not rely on OMP's coding defaults alone for essays.
+
+### Prompting for a human voice (works with any model)
+
+When drafting in OMP, add these constraints to your prompt:
+
+- **Vary sentence length dramatically** — mix 6-word sentences with 30-word ones.
+- **Use active voice.**
+- **Be specific and concrete.** No high-probability generic phrases.
+- **One contraction per paragraph.**
+- **Don't open paragraphs with meta-organizational language.**
+- **Avoid AI vocabulary:** `delve`, `tapestry`, `testament`, `vibrant`, `pivotal`, `showcase`, `fostering`, `underscore`, `landscape` (abstract).
+- **No em dashes or en dashes.**
+
+### Style cloning without training (fast)
+
+If you can't fine-tune yet (see Unsloth section below), paste 3–5 of your real paragraphs into OMP and prompt:
+
+> Analyze my writing samples (vocabulary level, sentence length variety, common transitions, how I open paragraphs, how formal I am). Then rewrite the following assignment **indistinguishably in my voice**. Do not sound more educated than the samples. Do not use em dashes. Vary sentence length. Avoid generic AI transitions (Furthermore, In conclusion, It is important to note).
+
+Works best on Claude / GLM / Qwen. This is the single highest-leverage humanization technique — **detectors struggle more with text that matches a real student's voice than with generic humanizers.**
+
+### When to consider switching harnesses
+
+Stay on OMP unless you hit a specific wall:
+
+- **Switch to Claude Code + `essay-skills`** only if OMP keeps "printing code instead of writing prose" even with writing skills installed, or if you want a single `/essay` command with zero setup. That's a polish trade-off, not a capability gap.
+- **Gentle-AI for Pi** is worth knowing if you want a heavier harness layer on top of Pi/OMP (SDD, TDD, RDD, 15 agents). It sits *on top of* your setup, not instead of it.
+- **Cursor** is editor-first, not agent-first. Less suited to a skill-driven pipeline.
+
+---
 
 ## 📑 Table of Contents
 
@@ -120,7 +210,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 | # | Name | Link |
 |---|------|------|
-| 10 | StudyFetch | [studyfetch.com](https://www.studyfetch.com) |
+| 10 | StudyFetch | [studyfetch.com](https://studyfetch.com) |
 | 26 | AI Tutor Pro | [aitutorpro.ca](https://www.aitutorpro.ca/) |
 | 29 | Youlearn | [app.youlearn.ai](https://app.youlearn.ai/) |
 
@@ -141,7 +231,7 @@ Use **Sunshine + Moonlight + Tailscale** to remotely connect to your home PC fro
 
 ## 🦥 Local Fine-Tuning with Unsloth (Train on YOUR Writing Style)
 
-> **Why this matters:** The strongest free method is fine-tuning a local model on *your* old essays, discussion posts, and lowest-AI-detected writing. Detectors struggle more with text that matches a real student's voice than with generic humanizers.
+> **Why this matters:** The strongest free method is fine-tuning a local model on *your* old essays, discussion posts, and lowest-AI-detected writing. Detectors struggle more with text that matches a real student's voice than with generic humanizers. This is the endgame version of the "style cloning without training" tip in the OMP section above.
 
 **Official docs:** [unsloth.ai/docs](https://unsloth.ai/docs) · [GitHub](https://github.com/unslothai/unsloth) · [Notebooks](https://docs.unsloth.ai/get-started/unsloth-notebooks)
 
@@ -366,7 +456,7 @@ If you can't fine-tune yet, paste 3–5 of your real paragraphs and prompt:
 
 > Analyze my writing samples (vocabulary level, sentence length variety, common transitions, how I open paragraphs, how formal I am). Then rewrite the following assignment **indistinguishably in my voice**. Do not sound more educated than the samples. Do not use em dashes. Vary sentence length. Avoid generic AI transitions (Furthermore, In conclusion, It is important to note).
 
-Works best on Claude / GLM / Qwen.
+Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute writing stack section above — see "Style cloning without training.")
 
 ---
 
@@ -478,7 +568,7 @@ Works best on Claude / GLM / Qwen.
 | Walter Writes AI | [walterwrites.ai](https://walterwrites.ai/) |
 | CleverHumanizer | [cleverhumanizer.ai](https://cleverhumanizer.ai/) |
 | RewriteIQ | [rewriteiq.com](https://rewriteiq.com/) |
-| TheContentGPT | [TheContentGPT](https://thecontentgpt.com)
+| TheContentGPT | [TheContentGPT](https://thecontentgpt.com) |
 | GPTinf | [app.gptinf.com](https://app.gptinf.com/) |
 | Cognibypass | [cognibypass.com](https://cognibypass.com/bypass) |
 | Spinbot | [spinbot.com](https://spinbot.com/) |
@@ -774,6 +864,7 @@ Works best on Claude / GLM / Qwen.
 >
 > *(Best used with unpopular but high-quality latest AI models like Claude or GLM. Ask research AI like Perplexity, Grok, or an unbiased AI which model to use — you can even ask for a prompt for it.)*
 > *(Less-common models often score lower on detectors that were tuned mostly on ChatGPT/Claude output. Rotating writers (Claude → GLM → Qwen → local fine-tune) beats using one model forever. Always verify with multiple detectors.)*
+
 ---
 
 ## 🔄 My Personal Workflow
@@ -804,6 +895,8 @@ DISPLAY=:1 bwrap --dev-bind / / --unshare-pid --unshare-ipc commandtoapphere com
 or hide an app entirely:
 sudo mount -o remount,rw,hidepid=2 /proc
 
+> **Alternative workflow (OMP + OmniRoute):** If you're using OMP + OmniRoute, you can run the entire draft → humanize → verify pipeline inside OMP with skills (`essay-skills`, `speak-like-you-eat`, `humanizer`, `anti-ai-detector`) instead of bouncing between web tools. See the **Oh My Pi + OmniRoute: The Human-Sounding Writing Stack** section at the top.
+
 ---
 
 ## ⭐ Best Tools (My Opinion / Researched)
@@ -832,7 +925,16 @@ sudo mount -o remount,rw,hidepid=2 /proc
 | **Paid** | Verva (previously TwainGPT), Cognibypass, Humbot, BypassGPT, Walter Writes AI, RewriteIQ |
 | **Free** | Humbot, Hix.ai, Rephrasy, UnAIMyText, GPTInf, BypassGPT, Clever Humanizer |
 
-> **💡 Another free method:** Feed the AI your own old writing samples so it can train on your style. The more you give, the better. You can also use your lowest AI-detected content as training material.
+> **💡 Another free method:** Feed the AI your own old writing samples so it can train on your style. The more you give, the better. You can also use your lowest AI-detected content as training material. For a skill-based version of this, see the **OMP + OmniRoute** section — `humanizer` skill with voice calibration does exactly this.
+
+### Best Writing Harness
+
+| Tier | Tool | Why |
+|------|------|-----|
+| **Best overall** | **Oh My Pi (OMP) + OmniRoute** | Multi-model routing, skills, sub-agents, writing pipeline. See the dedicated section above. |
+| **Most polished** | Claude Code | Mature writing skill ecosystem (`essay-skills`), strong long-form quality. Closed harness, no easy multi-model routing. |
+| **Heavier layer** | Gentle-AI for Pi | SDD/TDD/RDD, 15 agents. Sits *on top of* OMP. |
+| **Editor-first** | Cursor | Good for selection-based prose editing. Not agent-first. |
 
 ---
 
