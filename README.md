@@ -174,8 +174,6 @@ Gentle AI is not a writing harness — it is an **engineering discipline layer**
 
 ---
 
-## ⭐ Best Tools (My Opinion / Researched)
-
 ### Best Writing Harness
 
 | Tier | Tool | Why |
