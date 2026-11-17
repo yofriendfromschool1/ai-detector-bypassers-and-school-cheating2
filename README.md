@@ -777,7 +777,7 @@ Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute 
 | AnswerAI Pro | [answerai.pro](https://answerai.pro/) | [Extension](https://answerai.pro/ext) | [Apple](https://apps.apple.com/us/app/answer-ai-your-ai-tutor/id6446047896) / [Android](https://play.google.com/store/apps/details?id=com.cyberdavinci.gptkeyboard) |
 | Monica | [monica.im](https://monica.im/home) | [All Downloads](https://monica.im/download) | — |
 | SchoolCheats | [schoolcheats.net](https://schoolcheats.net/) | [Chrome](https://chromewebstore.google.com/detail/school-cheats/dcecjjjnjecoiehclollekjmfgblkkha?hl=en) | [GitHub](https://github.com/schoolcheats) |
-
+AI Calculator: https://github.com/JonasHeselschwerdt/ChatGPT-mod-for-calculators
 ### Math Solvers
 
 | Name | Link |
