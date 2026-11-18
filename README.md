@@ -888,6 +888,10 @@ AI Calculator: https://github.com/JonasHeselschwerdt/ChatGPT-mod-for-calculators
 - [wwwg/UltraTypeBot](https://github.com/wwwg/UltraTypeBot)
 - [kgsensei/NitroTypeHack2](https://github.com/kgsensei/NitroTypeHack2)
 
+### Sparx
+- [blooket1.com/play/sparx%20helper](https://blooket1.com/play/sparx%20helper/)
+- [NajmAjmal/sparxmaths](https://github.com/NajmAjmal/sparxmaths)
+
 ### Course Hero
 
 - [OriginalAlien/CourseHero-Tool](https://github.com/OriginalAlien/CourseHero-Tool)
