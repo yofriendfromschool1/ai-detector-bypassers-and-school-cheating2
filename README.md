@@ -1088,7 +1088,7 @@ https://github.com/ubn2/CheckMyDraftAI
 
 ### More Info:
 - [Free Media Heck Yeah's AI Section](https://fmhy.net/ai)
-
+- [cleverhumanizer community](https://cleverhumanizer.ai/community/)
 ---
 
 ## 📊 AI Leaderboards & Benchmarks
