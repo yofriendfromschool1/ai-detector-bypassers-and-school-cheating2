@@ -715,6 +715,7 @@ Works best on Claude / GLM / Qwen. (This is also built into the OMP + OmniRoute 
 |---|------|------|-------|
 | 3 | CopyLeaks | [copyleaks.com](https://copyleaks.com/ai-content-detector) | — |
 | 4 | Originality.ai | [originality.ai](https://originality.ai/) | — |
+| 5 | Pangram | [pangram.com](https://www.pangram.com/dashboard) | — |
 | — | Turnitin AI | — | Bad reviews, not really recommended |
 | — | Winston AI | — | — |
 
@@ -1093,6 +1094,9 @@ https://github.com/ubn2/CheckMyDraftAI
 - [r/BypassAiDetect](https://www.reddit.com/r/BypassAiDetect/)
 - [r/humanizeAIwriting](https://www.reddit.com/r/humanizeAIwriting/)
 - [r/bestaihumanizers](https://www.reddit.com/r/bestaihumanizers/)
+- [r/WritingWithAI](https://www.reddit.com/r/WritingWithAI/)
+- [r/AIDetectionAcademia](https://www.reddit.com/r/AIDetectionAcademia/)
+- [Draft44.com](https://draft44.com) (NOTE I DO NOT KNOW IF IT IS LEGIT BUT LAST OPTION)
 
 ---
 
