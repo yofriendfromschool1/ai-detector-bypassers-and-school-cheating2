@@ -1089,6 +1089,11 @@ https://github.com/ubn2/CheckMyDraftAI
 ### More Info:
 - [Free Media Heck Yeah's AI Section](https://fmhy.net/ai)
 - [cleverhumanizer community](https://cleverhumanizer.ai/community/)
+- [forum.benchmarkreviews.com humanize ai community](https://forum.benchmarkreviews.com/c/ai/197)
+- [r/BypassAiDetect](https://www.reddit.com/r/BypassAiDetect/)
+- [r/humanizeAIwriting](https://www.reddit.com/r/humanizeAIwriting/)
+- [r/bestaihumanizers](https://www.reddit.com/r/bestaihumanizers/)
+
 ---
 
 ## 📊 AI Leaderboards & Benchmarks
