@@ -1,6 +1,8 @@
 # 🤖 AI Detector Bypassers
 
 # 🚨WARNING: [Regarding Claudes New Invisible AI Generated Watermark](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content)
+# 🚨WARNING: [Regarding ChatGPT's New Invisible AI Generated Watermark](https://openai.com/index/eu-text-provenance/)
+- https://aclanthology.org/2024.findings-emnlp.821/
 - strip via CleanPaste + plain-text paste; don’t submit from Claude’s export if it embeds markers.
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-7289DA?logo=discord&logoColor=white)](https://discord.gg/8mtJc3w4DT)
